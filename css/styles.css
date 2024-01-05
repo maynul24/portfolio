@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0 30px;
+}
+
+.logo{
+    width: 30%;
+}
+
+.navber > .menu-items{
+     display: flex;
+}
+
+.navber li{
+    list-style: none;
+    padding-right: 20px;
+}
+
+.navber li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.navber li a:hover{
+    background-color: tomato;
+    cursor: pointer;
+}
+
+nav li .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: black;
+}
+
+.dropdown-content{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dropdown-content li{
+    padding: 5px 5px;
+}
+
+.dropdown-content li a{
+    padding: 5px;
+}
+
+nav li:hover .dropdown-content{
+    display: block;
+}
+
+.menu-button{
+    display: flex;
+}
+
+.menu-button li {
+    list-style: none;
+    font-size: 24px;
+    padding-right: 20px;
+}
+
+.menu-button li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+}
+
+.menu-button li a:hover{
+    background-color: tomato;
+    cursor: pointer;
+}
