@@ -3,10 +3,11 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Merriweather', serif;
 }
 
-header{
+.main-header{
     width: 100%;
     height: 80px;
     background-color: black;
@@ -18,8 +19,8 @@ header{
     padding: 0 30px;
 }
 
-.logo{
-    width: 30%;
+.logo img{
+    width:100%;
 }
 
 .navber > .menu-items{
@@ -65,23 +66,38 @@ nav li:hover .dropdown-content{
     display: block;
 }
 
-.menu-button{
+.menu-buttons{
     display: flex;
 }
 
-.menu-button li {
+.menu-buttons li {
     list-style: none;
-    font-size: 24px;
-    padding-right: 20px;
+    font-size: 30px;
+    padding-right: 10px;
 }
 
-.menu-button li a{
+.menu-buttons li a{
     text-decoration: none;
     color: white;
     padding: 5px 10px;
 }
 
-.menu-button li a:hover{
+.menu-buttons li a:hover{
     background-color: tomato;
     cursor: pointer;
+    transition:0.1s;
+}
+
+.cta-button{
+    font-size: 18px;
+    padding: 10px;
+    background-color: tomato;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px tan;
+}
+
+.cta-button a{
+    text-decoration: none;
+    color: white;
 }
